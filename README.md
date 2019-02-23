@@ -1,3 +1,12 @@
+# This is fork of crystal-sqlite3 to support sqlcipher
+super basic support, lot of work to be done
+
+```
+DB.open "sqlite3://./data2.db" do |db|
+  db.set_encryption_key "my-secret-key"
+  db.exec "insert into contacts values (?, ?)", "John Doe", 30
+```
+
 # crystal-sqlite3 [![Build Status](https://travis-ci.org/crystal-lang/crystal-sqlite3.svg?branch=master)](https://travis-ci.org/crystal-lang/crystal-sqlite3)
 
 SQLite3 bindings for [Crystal](http://crystal-lang.org/).

@@ -1,6 +1,6 @@
 require "./type"
 
-@[Link("sqlite3")]
+@[Link("sqlcipher")]
 lib LibSQLite3
   type SQLite3 = Void*
   type Statement = Void*
